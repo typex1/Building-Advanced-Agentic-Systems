@@ -4,8 +4,7 @@
       "url": "https://knowledge-mcp.global.api.aws",
       "type": "http",
       "disabled": false
-    }
-  },
+    },
     "strands-agents": {
       "command": "uvx",
       "args": ["strands-agents-mcp-server"],
@@ -20,6 +19,8 @@
       "args": ["awslabs.amazon-bedrock-agentcore-mcp-server@latest"],
       "env": {
         "FASTMCP_LOG_LEVEL": "ERROR"
-      }
+      },
+      "disabled": false
     }
+  }
 }
