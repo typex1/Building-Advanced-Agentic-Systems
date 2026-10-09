@@ -1,0 +1,20 @@
+[project]
+name = "finance-assistant"
+version = "0.1.0"
+description = "Building Advanced Agentic Systems - finance assistant"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    # Security floors:
+    #   bedrock-agentcore >= 1.6.1          (CVE-2026-12530)
+    #   bedrock-agentcore-starter-toolkit   (CVE-2026-4269 fixed 0.1.13; CVE-2026-105812/106032)
+    "bedrock-agentcore>=1.6.1",
+    "bedrock-agentcore-starter-toolkit>=0.3.0",
+    "boto3>=1.40",
+    "matplotlib>=3.10",
+    "pandas>=2.3",
+    "pydantic>=2.11",
+    "strands-agents>=1.57",
+    "strands-agents-tools>=0.2.6",
+    "yfinance>=1.4",
+]
